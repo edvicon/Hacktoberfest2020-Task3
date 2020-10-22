@@ -47,12 +47,12 @@ namespace BellmanFordAlgorithm
             int[] distance = new int[verticesCount];
  
             /* Bug Start #127 */
-            for (string i = 0; i < verticesCount; i++)
+            for (int i = 0; i < verticesCount; i++)
                 distance[i] = int.MaxValue;
  
             distance[source] = 0;
  
-            for (string i = 1; i <= verticesCount - 1; ++i)
+            for (int i = 1; i <= verticesCount - 1; ++i)
             {
                 for (int j = 0; j < edgesCount; ++j)
                 {
